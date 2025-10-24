@@ -1166,7 +1166,7 @@ SOFTWARE.
 
 - **Documentation**: Read this README thoroughly
 - **Issues**: [GitHub Issues](https://github.com/yourusername/fda-dashboard/issues)
-- **Email**: support@example.com
+- **Email**: surya.hackathon@gmail.com
 - **Slack**: [Join our Slack](https://slack.example.com)
 
 ### Useful Resources
@@ -1184,7 +1184,7 @@ SOFTWARE.
 - **Google Cloud Platform** - For cloud infrastructure and APIs
 - **Streamlit** - For the amazing web framework
 - **Plotly** - For interactive visualizations
-- **Contributors** - Everyone who has contributed to this project
+- **Contributors** - Surya
 
 ---
 
