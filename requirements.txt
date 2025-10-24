@@ -1,0 +1,23 @@
+# FDA Intelligence Dashboard - Requirements
+# Python 3.8+ required
+
+# Core Framework
+streamlit>=1.28.0
+
+# Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Google Cloud Services
+google-cloud-bigquery>=3.11.0
+google-cloud-translate>=3.12.0
+google-cloud-speech>=2.21.0
+google-cloud-texttospeech>=2.14.0
+google-auth>=2.23.0
+
+# Visualization
+plotly>=5.17.0
+
+# Optional but recommended
+python-dateutil>=2.8.0
+pytz>=2023.3
