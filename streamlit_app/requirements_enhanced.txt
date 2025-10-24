@@ -1,0 +1,33 @@
+# Enhanced FDA Intelligence Dashboard Requirements
+# Includes all Google Cloud AI services
+
+# Core Web Framework
+streamlit>=1.28.0
+
+# Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Google Cloud Services
+google-cloud-bigquery>=3.11.0
+google-cloud-aiplatform>=1.36.0
+google-cloud-language>=2.11.0
+google-cloud-translate>=3.12.0
+google-cloud-speech>=2.21.0
+google-cloud-texttospeech>=2.14.0
+
+# Vertex AI SDK
+google-cloud-aiplatform[pipelines]>=1.36.0
+
+# Visualization
+plotly>=5.17.0
+
+# Machine Learning
+scikit-learn>=1.3.0
+
+# Database Types
+db-dtypes>=1.1.1
+
+# Additional utilities
+python-dotenv>=1.0.0
+
