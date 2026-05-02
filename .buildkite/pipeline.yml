@@ -1,0 +1,15 @@
+steps:
+  - label: ":lint-roller: Lint and Test"
+    command:
+      - pip install -r requirements.txt
+      - flake8 streamlit_app/
+      - pytest --maxfail=1 --disable-warnings -q
+    agents:
+      queue: "default"
+
+  - label: ":rocket: Deploy"
+    if: build.pull_request.id != null && build.pull_request.merged == true
+    command:
+      - ./scripts/deploy.sh
+    agents:
+      queue: "deploy"
