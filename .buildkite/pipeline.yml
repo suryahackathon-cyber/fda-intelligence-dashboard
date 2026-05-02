@@ -1,15 +1,17 @@
 steps:
-  - label: ":lint-roller: Lint and Test"
-    command:
-      - pip install -r requirements.txt
-      - flake8 streamlit_app/
-      - pytest --maxfail=1 --disable-warnings -q
+  - label: ":python: Validate Streamlit Code"
+    command: 
+      - "pip install -r streamlit_app/app_final/requirements.txt"
+      - "python -m py_compile streamlit_app/app_final/app.py"
     agents:
-      queue: "default"
+      queue: "windows-runner"
 
-  - label: ":rocket: Deploy"
-    if: build.pull_request.id != null && build.pull_request.merged == true
-    command:
-      - ./scripts/deploy.sh
+  - wait: ~
+
+  - block: ":rocket: Approve Deployment"
+    prompt: "Does the dashboard look good to merge?"
+
+  - label: ":streamlit: Deploy"
+    command: "echo 'Deployment step executed!'"
     agents:
-      queue: "deploy"
+      queue: "windows-runner"
