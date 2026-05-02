@@ -124,7 +124,7 @@ class FDADashboard:
             # Translation API (Optional)
             try:
                 self.translate_client = translate.Client()
-                st.success("✅ Translation API connected")
+                st.success("✅ Translation API connected ---- surya")
             except Exception as e:
                 st.warning("⚠️ Translation API not available")
                 self.translate_client = None
